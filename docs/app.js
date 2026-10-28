@@ -1,6 +1,6 @@
 const $ = s => document.querySelector(s);
 const usd = x => x == null ? "-" : (Math.abs(x) >= 100 ? "$" + x.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})
-  : Math.abs(x) >= 1 ? "$" + x.toFixed(2) : "$" + x.toFixed(5));
+  : Math.abs(x) >= 1 ? "$" + x.toFixed(4) : "$" + x.toFixed(5));
 const money = x => "$" + x.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});
 const pct = x => (x >= 0 ? "+" : "") + (x * 100).toFixed(2) + "%";
 const cls = x => x >= 0 ? "pos" : "neg";
