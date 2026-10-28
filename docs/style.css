@@ -1,0 +1,23 @@
+:root{--bg:#0f1419;--card:#1a2129;--text:#e6edf3;--muted:#8b98a5;--green:#3fb950;--red:#f85149;--line:#2d3742;--accent:#58a6ff}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
+header,main,footer{max-width:1100px;margin:0 auto;padding:0 16px}
+.banner{background:#9e6a03;color:#fff;font-weight:600;text-align:center;padding:10px;margin:0 -16px;border-radius:0 0 8px 8px}
+h1{margin:18px 0 4px}h2{margin-top:36px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.sub,.muted{color:var(--muted)}.small{font-size:13px;font-weight:400}
+nav{display:flex;flex-wrap:wrap;gap:14px;margin:12px 0}nav a{color:var(--accent);text-decoration:none}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px}
+.card .k{color:var(--muted);font-size:13px}.card .v{font-size:22px;font-weight:600}
+.tablewrap{overflow-x:auto;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:500;white-space:nowrap}td.num{white-space:nowrap}
+td.reason{min-width:260px}
+.pos{color:var(--green)}.neg{color:var(--red)}
+.tag{padding:2px 8px;border-radius:10px;font-size:12px;font-weight:600}
+.BUY{background:#1f3d2a;color:var(--green)}.SELL{background:#4a1f1f;color:var(--red)}.HOLD{background:#2d3742;color:var(--muted)}
+.chart{width:100%;border-radius:8px;background:#fff;margin:12px 0}
+details{margin:12px 0}summary{cursor:pointer;color:var(--accent)}
+footer{padding:30px 16px;font-size:13px}
+@media (max-width:600px){body{font-size:14px}th,td{padding:6px}.card .v{font-size:18px}}

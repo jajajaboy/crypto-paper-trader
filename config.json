@@ -1,0 +1,15 @@
+{
+  "assets": [
+    "DOGE-USD",
+    "XRP-USD",
+    "ADA-USD"
+  ],
+  "granularity_seconds": 3600,
+  "fast_sma": 20,
+  "slow_sma": 50,
+  "fee_rate": 0.006,
+  "slippage_rate": 0.0005,
+  "starting_cash_usd": 100,
+  "backtest_days": 90,
+  "timezone": "America/Chicago"
+}

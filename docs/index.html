@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crypto Paper Trader (fake money)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="banner">PAPER TRADING: fake money only. No real orders, no exchange account. Not financial advice.</div>
+  <h1>Crypto Paper Trader</h1>
+  <p class="sub">A practice bot trading DOGE, XRP and ADA with a pretend $100, using a simple moving-average strategy on hourly prices.</p>
+  <nav><a href="#portfolio">Portfolio</a><a href="#trades">Trades</a><a href="#decisions">Decisions</a><a href="#backtest">Backtest</a><a href="#how">How it works</a></nav>
+</header>
+<main>
+  <section id="portfolio">
+    <h2>Live paper portfolio</h2>
+    <div class="cards" id="summary"></div>
+    <div class="tablewrap"><table id="holdings"><thead><tr><th>Coin</th><th>Holding</th><th>Price</th><th>Cash</th><th>Value</th></tr></thead><tbody></tbody></table></div>
+    <p class="muted" id="updated"></p>
+  </section>
+  <section id="trades">
+    <h2>Live trade log <span class="muted small">(newest first)</span></h2>
+    <div class="tablewrap"><table id="tradetable"><thead><tr><th>Time</th><th>Coin</th><th>Action</th><th>Price</th><th>Amount</th><th>Fee</th><th>Reasoning</th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section id="decisions">
+    <h2>Every hourly decision <span class="muted small">(including holds)</span></h2>
+    <div class="tablewrap"><table id="dectable"><thead><tr><th>Time</th><th>Coin</th><th>Action</th><th>Price</th><th>20h avg</th><th>50h avg</th><th>Reasoning</th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section id="backtest">
+    <h2>90-day backtest</h2>
+    <p class="muted" id="btmeta"></p>
+    <div class="tablewrap"><table id="bttable"><thead><tr><th>Coin</th><th>Strategy</th><th>Return</th><th>Trades</th><th>Win rate</th><th>Fees paid</th><th>Max drawdown</th><th>Buy &amp; hold</th><th>B&amp;H return</th><th>B&amp;H drawdown</th></tr></thead><tbody></tbody></table></div>
+    <p id="btnote"></p>
+    <img src="backtest.png" alt="Backtest equity curves: strategy vs buy and hold" class="chart">
+    <details><summary>Backtest trades with reasoning (<span id="btcount"></span>)</summary>
+      <div class="tablewrap"><table id="bttrades"><thead><tr><th>Time</th><th>Coin</th><th>Action</th><th>Price</th><th>Amount</th><th>Fee</th><th>Reasoning</th></tr></thead><tbody></tbody></table></div>
+    </details>
+  </section>
+  <section id="how">
+    <h2>How the strategy works</h2>
+    <ul>
+      <li>Every hour the bot looks at each coin's average price over the last <b id="hf">20</b> hours (fast) and the last <b id="hs">50</b> hours (slow).</li>
+      <li>If the fast average is above the slow one, the trend is up, so it holds the coin. If it's below, it sells and holds cash. It never borrows or bets on prices falling.</li>
+      <li>The $100 is split evenly across the coins, and each coin is traded independently.</li>
+      <li>Each simulated trade pays a <span id="hfee">0.6%</span> fee plus <span id="hslip">0.05%</span> slippage, roughly what a small Coinbase account would pay.</li>
+      <li>Prices come from Coinbase's free public market data. Times are shown in America/Chicago.</li>
+      <li>Honest note: in the 90-day backtest this strategy lost money and did worse than simply buying and holding, mostly because of fees from frequent trading. This site exists to practice and watch, not to promise profits.</li>
+    </ul>
+  </section>
+</main>
+<footer class="muted">Paper trading simulation. Past or simulated results do not predict future returns.</footer>
+<script src="app.js"></script>
+</body>
+</html>
