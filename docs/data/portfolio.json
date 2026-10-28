@@ -2,8 +2,8 @@
  "mode": "PAPER (fake money)",
  "starting_cash_usd": 100,
  "created": "2026-10-28 14:10 CDT",
- "last_updated": "2026-10-28 15:11 CDT",
- "ticks": 2,
+ "last_updated": "2026-10-28 17:57 CDT",
+ "ticks": 3,
  "data_source": "Coinbase Exchange public API",
  "params": {
   "fast_sma": 20,
@@ -11,32 +11,32 @@
   "fee_rate": 0.006,
   "slippage_rate": 0.0005
  },
- "total_value": 100.4296814238032,
+ "total_value": 99.72423747558328,
  "cash": 0.0,
- "pnl": 0.42968142380320273,
- "pnl_pct": 0.004296814238031965,
+ "pnl": -0.2757625244167201,
+ "pnl_pct": -0.0027576252441672278,
  "fees_paid": 0.6000000000000001,
  "holdings": [
   {
    "asset": "DOGE-USD",
    "cash": 0.0,
    "qty": 416.45843744794274,
-   "price": 0.08026,
-   "value": 33.424954189571885
+   "price": 0.07979,
+   "value": 33.22921872397135
   },
   {
    "asset": "XRP-USD",
    "cash": 0.0,
    "qty": 24.98624939328535,
-   "price": 1.3346,
-   "value": 33.34664844027863
+   "price": 1.3262,
+   "value": 33.13676394537504
   },
   {
    "asset": "ADA-USD",
    "cash": 0.0,
    "qty": 162.06702038690617,
-   "price": 0.20768,
-   "value": 33.658078793952676
+   "price": 0.20583,
+   "value": 33.3582548062369
   }
  ],
  "trades": [
@@ -84,6 +84,36 @@
   }
  ],
  "decisions": [
+  {
+   "time": "2026-10-28 17:57 CDT",
+   "ts": 1793228237,
+   "asset": "DOGE-USD",
+   "market_price": 0.07979,
+   "sma_fast": 0.07965499999999999,
+   "sma_slow": 0.07852119999999997,
+   "reason": "Held DOGE: the 20-hour average ($0.07965) is still above the 50-hour average ($0.07852); uptrend continues, so the bot keeps holding DOGE.",
+   "action": "HOLD"
+  },
+  {
+   "time": "2026-10-28 17:57 CDT",
+   "ts": 1793228237,
+   "asset": "XRP-USD",
+   "market_price": 1.3262,
+   "sma_fast": 1.324145,
+   "sma_slow": 1.3148860000000002,
+   "reason": "Held XRP: the 20-hour average ($1.32414) is still above the 50-hour average ($1.31489); uptrend continues, so the bot keeps holding XRP.",
+   "action": "HOLD"
+  },
+  {
+   "time": "2026-10-28 17:57 CDT",
+   "ts": 1793228237,
+   "asset": "ADA-USD",
+   "market_price": 0.20583,
+   "sma_fast": 0.20521000000000003,
+   "sma_slow": 0.2048260000000001,
+   "reason": "Held ADA: the 20-hour average ($0.20521) is still above the 50-hour average ($0.20483); uptrend continues, so the bot keeps holding ADA.",
+   "action": "HOLD"
+  },
   {
    "time": "2026-10-28 15:11 CDT",
    "ts": 1793218310,
