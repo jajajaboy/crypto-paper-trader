@@ -2,8 +2,8 @@
  "mode": "PAPER (fake money)",
  "starting_cash_usd": 100,
  "created": "2026-10-28 14:10 CDT",
- "last_updated": "2026-10-29 11:45 CDT",
- "ticks": 6,
+ "last_updated": "2026-10-29 14:46 CDT",
+ "ticks": 7,
  "data_source": "Coinbase Exchange public API",
  "params": {
   "fast_sma": 20,
@@ -21,21 +21,21 @@
    "asset": "DOGE-USD",
    "cash": 32.54578793103449,
    "qty": 0.0,
-   "price": 0.08006,
+   "price": 0.07924,
    "value": 32.54578793103449
   },
   {
    "asset": "XRP-USD",
    "cash": 32.00050719060268,
    "qty": 0.0,
-   "price": 1.2996,
+   "price": 1.2832,
    "value": 32.00050719060268
   },
   {
    "asset": "ADA-USD",
    "cash": 32.188322924704494,
    "qty": 0.0,
-   "price": 0.20514,
+   "price": 0.20217,
    "value": 32.188322924704494
   }
  ],
@@ -126,6 +126,36 @@
   }
  ],
  "decisions": [
+  {
+   "time": "2026-10-29 14:46 CDT",
+   "ts": 1793303171,
+   "asset": "DOGE-USD",
+   "market_price": 0.07924,
+   "sma_fast": 0.07876649999999998,
+   "sma_slow": 0.07910500000000001,
+   "reason": "Stayed in cash for DOGE: the 20-hour average ($0.07877) is below the 50-hour average ($0.07911), so there is no uptrend to buy into.",
+   "action": "HOLD"
+  },
+  {
+   "time": "2026-10-29 14:46 CDT",
+   "ts": 1793303171,
+   "asset": "XRP-USD",
+   "market_price": 1.2832,
+   "sma_fast": 1.29604,
+   "sma_slow": 1.313053999999999,
+   "reason": "Stayed in cash for XRP: the 20-hour average ($1.29604) is below the 50-hour average ($1.31305), so there is no uptrend to buy into.",
+   "action": "HOLD"
+  },
+  {
+   "time": "2026-10-29 14:46 CDT",
+   "ts": 1793303171,
+   "asset": "ADA-USD",
+   "market_price": 0.20217,
+   "sma_fast": 0.20099649999999988,
+   "sma_slow": 0.2035542,
+   "reason": "Stayed in cash for ADA: the 20-hour average ($0.20100) is below the 50-hour average ($0.20355), so there is no uptrend to buy into.",
+   "action": "HOLD"
+  },
   {
    "time": "2026-10-29 11:45 CDT",
    "ts": 1793292346,
