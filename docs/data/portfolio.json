@@ -2,8 +2,8 @@
  "mode": "PAPER (fake money)",
  "starting_cash_usd": 100,
  "created": "2026-10-28 14:10 CDT",
- "last_updated": "2026-10-28 19:03 CDT",
- "ticks": 4,
+ "last_updated": "2026-10-29 07:23 CDT",
+ "ticks": 5,
  "data_source": "Coinbase Exchange public API",
  "params": {
   "fast_sma": 20,
@@ -11,35 +11,77 @@
   "fee_rate": 0.006,
   "slippage_rate": 0.0005
  },
- "total_value": 99.66138893677473,
- "cash": 0.0,
- "pnl": -0.33861106322527235,
- "pnl_pct": -0.0033861106322526924,
- "fees_paid": 0.6000000000000001,
+ "total_value": 96.73461804634167,
+ "cash": 96.73461804634167,
+ "pnl": -3.265381953658334,
+ "pnl_pct": -0.032653819536583306,
+ "fees_paid": 1.1839111753300302,
  "holdings": [
   {
    "asset": "DOGE-USD",
-   "cash": 0.0,
-   "qty": 416.45843744794274,
-   "price": 0.07975,
-   "value": 33.212560386473434
+   "cash": 32.54578793103449,
+   "qty": 0.0,
+   "price": 0.07866,
+   "value": 32.54578793103449
   },
   {
    "asset": "XRP-USD",
-   "cash": 0.0,
-   "qty": 24.98624939328535,
-   "price": 1.325,
-   "value": 33.10678044610309
+   "cash": 32.00050719060268,
+   "qty": 0.0,
+   "price": 1.2891,
+   "value": 32.00050719060268
   },
   {
    "asset": "ADA-USD",
-   "cash": 0.0,
-   "qty": 162.06702038690617,
-   "price": 0.20573,
-   "value": 33.342048104198206
+   "cash": 32.188322924704494,
+   "qty": 0.0,
+   "price": 0.19991,
+   "value": 32.188322924704494
   }
  ],
  "trades": [
+  {
+   "time": "2026-10-29 07:23 CDT",
+   "ts": 1793276588,
+   "asset": "DOGE-USD",
+   "market_price": 0.07866,
+   "sma_fast": 0.07881,
+   "sma_slow": 0.0788326,
+   "reason": "Sold DOGE: the 20-hour average ($0.07881) dropped below the 50-hour average ($0.07883), signaling a downtrend, so the bot moved back to cash.",
+   "side": "SELL",
+   "price": 0.07862067,
+   "qty": 416.45843744794274,
+   "usd": 32.54578793103449,
+   "fee_usd": 0.1964534482758621
+  },
+  {
+   "time": "2026-10-29 07:23 CDT",
+   "ts": 1793276588,
+   "asset": "XRP-USD",
+   "market_price": 1.2891,
+   "sma_fast": 1.3067650000000002,
+   "sma_slow": 1.315403999999999,
+   "reason": "Sold XRP: the 20-hour average ($1.30677) dropped below the 50-hour average ($1.31540), signaling a downtrend, so the bot moved back to cash.",
+   "side": "SELL",
+   "price": 1.28845545,
+   "qty": 24.98624939328535,
+   "usd": 32.00050719060268,
+   "fee_usd": 0.19316201523502624
+  },
+  {
+   "time": "2026-10-29 07:23 CDT",
+   "ts": 1793276588,
+   "asset": "ADA-USD",
+   "market_price": 0.19991,
+   "sma_fast": 0.20150949999999995,
+   "sma_slow": 0.20368039999999993,
+   "reason": "Sold ADA: the 20-hour average ($0.20151) dropped below the 50-hour average ($0.20368), signaling a downtrend, so the bot moved back to cash.",
+   "side": "SELL",
+   "price": 0.19981004500000002,
+   "qty": 162.06702038690617,
+   "usd": 32.188322924704494,
+   "fee_usd": 0.19429571181914182
+  },
   {
    "time": "2026-10-28 14:10 CDT",
    "ts": 1793214649,
@@ -84,6 +126,36 @@
   }
  ],
  "decisions": [
+  {
+   "time": "2026-10-29 07:23 CDT",
+   "ts": 1793276588,
+   "asset": "DOGE-USD",
+   "market_price": 0.07866,
+   "sma_fast": 0.07881,
+   "sma_slow": 0.0788326,
+   "reason": "Sold DOGE: the 20-hour average ($0.07881) dropped below the 50-hour average ($0.07883), signaling a downtrend, so the bot moved back to cash.",
+   "action": "SELL"
+  },
+  {
+   "time": "2026-10-29 07:23 CDT",
+   "ts": 1793276588,
+   "asset": "XRP-USD",
+   "market_price": 1.2891,
+   "sma_fast": 1.3067650000000002,
+   "sma_slow": 1.315403999999999,
+   "reason": "Sold XRP: the 20-hour average ($1.30677) dropped below the 50-hour average ($1.31540), signaling a downtrend, so the bot moved back to cash.",
+   "action": "SELL"
+  },
+  {
+   "time": "2026-10-29 07:23 CDT",
+   "ts": 1793276588,
+   "asset": "ADA-USD",
+   "market_price": 0.19991,
+   "sma_fast": 0.20150949999999995,
+   "sma_slow": 0.20368039999999993,
+   "reason": "Sold ADA: the 20-hour average ($0.20151) dropped below the 50-hour average ($0.20368), signaling a downtrend, so the bot moved back to cash.",
+   "action": "SELL"
+  },
   {
    "time": "2026-10-28 19:03 CDT",
    "ts": 1793232199,
