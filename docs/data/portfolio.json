@@ -2,8 +2,8 @@
  "mode": "PAPER (fake money)",
  "starting_cash_usd": 100,
  "created": "2026-10-28 14:10 CDT",
- "last_updated": "2026-11-05 14:38 CST",
- "ticks": 25,
+ "last_updated": "2026-11-05 17:57 CST",
+ "ticks": 26,
  "data_source": "Coinbase Exchange public API",
  "params": {
   "fast_sma": 20,
@@ -11,35 +11,63 @@
   "fee_rate": 0.006,
   "slippage_rate": 0.0005
  },
- "total_value": 91.65911873727936,
- "cash": 30.73743453324669,
- "pnl": -8.340881262720643,
- "pnl_pct": -0.08340881262720645,
- "fees_paid": 3.0951874642997668,
+ "total_value": 89.86142604286123,
+ "cash": 89.86142604286123,
+ "pnl": -10.138573957138775,
+ "pnl_pct": -0.10138573957138775,
+ "fees_paid": 3.4520727249211824,
  "holdings": [
   {
    "asset": "DOGE-USD",
    "cash": 30.73743453324669,
    "qty": 0.0,
-   "price": 0.07247,
+   "price": 0.07104,
    "value": 30.73743453324669
   },
   {
    "asset": "XRP-USD",
-   "cash": 0.0,
-   "qty": 24.369108737941644,
-   "price": 1.2377,
-   "value": 30.161645884950374
+   "cash": 29.2078881750517,
+   "qty": 0.0,
+   "price": 1.2064,
+   "value": 29.2078881750517
   },
   {
    "asset": "ADA-USD",
-   "cash": 0.0,
-   "qty": 166.6578442817483,
-   "price": 0.18457,
-   "value": 30.760038319082287
+   "cash": 29.91610333456283,
+   "qty": 0.0,
+   "price": 0.18068,
+   "value": 29.91610333456283
   }
  ],
  "trades": [
+  {
+   "time": "2026-11-05 17:57 CST",
+   "ts": 1793923042,
+   "asset": "XRP-USD",
+   "market_price": 1.2064,
+   "sma_fast": 1.2783949999999997,
+   "sma_slow": 1.2838819999999997,
+   "reason": "Sold XRP: the 20-hour average ($1.27839) dropped below the 50-hour average ($1.28388), signaling a downtrend, so the bot moved back to cash.",
+   "side": "SELL",
+   "price": 1.2057968,
+   "qty": 24.369108737941644,
+   "usd": 29.2078881750517,
+   "fee_usd": 0.17630516001037244
+  },
+  {
+   "time": "2026-11-05 17:57 CST",
+   "ts": 1793923042,
+   "asset": "ADA-USD",
+   "market_price": 0.18068,
+   "sma_fast": 0.19096399999999994,
+   "sma_slow": 0.1920016,
+   "reason": "Sold ADA: the 20-hour average ($0.19096) dropped below the 50-hour average ($0.19200), signaling a downtrend, so the bot moved back to cash.",
+   "side": "SELL",
+   "price": 0.18058966,
+   "qty": 166.6578442817483,
+   "usd": 29.91610333456283,
+   "fee_usd": 0.18058010061104324
+  },
   {
    "time": "2026-11-05 14:38 CST",
    "ts": 1793911108,
@@ -266,6 +294,36 @@
   }
  ],
  "decisions": [
+  {
+   "time": "2026-11-05 17:57 CST",
+   "ts": 1793923042,
+   "asset": "DOGE-USD",
+   "market_price": 0.07104,
+   "sma_fast": 0.07457,
+   "sma_slow": 0.0752052,
+   "reason": "Stayed in cash for DOGE: the 20-hour average ($0.07457) is below the 50-hour average ($0.07521), so there is no uptrend to buy into.",
+   "action": "HOLD"
+  },
+  {
+   "time": "2026-11-05 17:57 CST",
+   "ts": 1793923042,
+   "asset": "XRP-USD",
+   "market_price": 1.2064,
+   "sma_fast": 1.2783949999999997,
+   "sma_slow": 1.2838819999999997,
+   "reason": "Sold XRP: the 20-hour average ($1.27839) dropped below the 50-hour average ($1.28388), signaling a downtrend, so the bot moved back to cash.",
+   "action": "SELL"
+  },
+  {
+   "time": "2026-11-05 17:57 CST",
+   "ts": 1793923042,
+   "asset": "ADA-USD",
+   "market_price": 0.18068,
+   "sma_fast": 0.19096399999999994,
+   "sma_slow": 0.1920016,
+   "reason": "Sold ADA: the 20-hour average ($0.19096) dropped below the 50-hour average ($0.19200), signaling a downtrend, so the bot moved back to cash.",
+   "action": "SELL"
+  },
   {
    "time": "2026-11-05 14:38 CST",
    "ts": 1793911108,
