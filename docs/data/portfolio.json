@@ -2,8 +2,8 @@
  "mode": "PAPER (fake money)",
  "starting_cash_usd": 100,
  "created": "2026-10-28 14:10 CDT",
- "last_updated": "2026-11-13 11:18 CST",
- "ticks": 45,
+ "last_updated": "2026-11-18 12:50 CST",
+ "ticks": 46,
  "data_source": "Coinbase Exchange public API",
  "params": {
   "fast_sma": 20,
@@ -11,35 +11,77 @@
   "fee_rate": 0.006,
   "slippage_rate": 0.0005
  },
- "total_value": 88.70795701608517,
- "cash": 88.70795701608517,
- "pnl": -11.292042983914826,
- "pnl_pct": -0.1129204298391483,
- "fees_paid": 3.8051868558407533,
+ "total_value": 88.13164345226254,
+ "cash": 0.0,
+ "pnl": -11.868356547737463,
+ "pnl_pct": -0.11868356547737458,
+ "fees_paid": 4.337434597937264,
  "holdings": [
   {
    "asset": "DOGE-USD",
-   "cash": 30.73743453324669,
-   "qty": 0.0,
-   "price": 0.06463,
-   "value": 30.73743453324669
+   "cash": 0.0,
+   "qty": 517.5888314494823,
+   "price": 0.059,
+   "value": 30.537741055519454
   },
   {
    "asset": "XRP-USD",
-   "cash": 29.2078881750517,
-   "qty": 0.0,
-   "price": 1.0182,
-   "value": 29.2078881750517
+   "cash": 0.0,
+   "qty": 29.58317033348082,
+   "price": 0.9809,
+   "value": 29.018131780111336
   },
   {
    "asset": "ADA-USD",
-   "cash": 28.762634307786783,
-   "qty": 0.0,
-   "price": 0.16987,
-   "value": 28.762634307786783
+   "cash": 0.0,
+   "qty": 187.27158147081556,
+   "price": 0.15259,
+   "value": 28.575770616631747
   }
  ],
  "trades": [
+  {
+   "time": "2026-11-18 12:50 CST",
+   "ts": 1795027830,
+   "asset": "DOGE-USD",
+   "market_price": 0.059,
+   "sma_fast": 0.05927150000000002,
+   "sma_slow": 0.05912280000000001,
+   "reason": "Bought DOGE: the 20-hour average ($0.05927) is above the 50-hour average ($0.05912), signaling an uptrend, so the bot moved this coin's cash into DOGE.",
+   "side": "BUY",
+   "price": 0.05902949999999999,
+   "qty": 517.5888314494823,
+   "usd": 30.73743453324669,
+   "fee_usd": 0.18442460719948015
+  },
+  {
+   "time": "2026-11-18 12:50 CST",
+   "ts": 1795027830,
+   "asset": "XRP-USD",
+   "market_price": 0.9809,
+   "sma_fast": 0.9831299999999998,
+   "sma_slow": 0.969916,
+   "reason": "Bought XRP: the 20-hour average ($0.98313) is above the 50-hour average ($0.96992), signaling an uptrend, so the bot moved this coin's cash into XRP.",
+   "side": "BUY",
+   "price": 0.9813904499999999,
+   "qty": 29.58317033348082,
+   "usd": 29.2078881750517,
+   "fee_usd": 0.1752473290503102
+  },
+  {
+   "time": "2026-11-18 12:50 CST",
+   "ts": 1795027830,
+   "asset": "ADA-USD",
+   "market_price": 0.15259,
+   "sma_fast": 0.153237,
+   "sma_slow": 0.15321920000000006,
+   "reason": "Bought ADA: the 20-hour average ($0.15324) is above the 50-hour average ($0.15322), signaling an uptrend, so the bot moved this coin's cash into ADA.",
+   "side": "BUY",
+   "price": 0.152666295,
+   "qty": 187.27158147081556,
+   "usd": 28.762634307786783,
+   "fee_usd": 0.1725758058467207
+  },
   {
    "time": "2026-11-12 08:09 CST",
    "ts": 1794492550,
@@ -322,6 +364,36 @@
   }
  ],
  "decisions": [
+  {
+   "time": "2026-11-18 12:50 CST",
+   "ts": 1795027830,
+   "asset": "DOGE-USD",
+   "market_price": 0.059,
+   "sma_fast": 0.05927150000000002,
+   "sma_slow": 0.05912280000000001,
+   "reason": "Bought DOGE: the 20-hour average ($0.05927) is above the 50-hour average ($0.05912), signaling an uptrend, so the bot moved this coin's cash into DOGE.",
+   "action": "BUY"
+  },
+  {
+   "time": "2026-11-18 12:50 CST",
+   "ts": 1795027830,
+   "asset": "XRP-USD",
+   "market_price": 0.9809,
+   "sma_fast": 0.9831299999999998,
+   "sma_slow": 0.969916,
+   "reason": "Bought XRP: the 20-hour average ($0.98313) is above the 50-hour average ($0.96992), signaling an uptrend, so the bot moved this coin's cash into XRP.",
+   "action": "BUY"
+  },
+  {
+   "time": "2026-11-18 12:50 CST",
+   "ts": 1795027830,
+   "asset": "ADA-USD",
+   "market_price": 0.15259,
+   "sma_fast": 0.153237,
+   "sma_slow": 0.15321920000000006,
+   "reason": "Bought ADA: the 20-hour average ($0.15324) is above the 50-hour average ($0.15322), signaling an uptrend, so the bot moved this coin's cash into ADA.",
+   "action": "BUY"
+  },
   {
    "time": "2026-11-13 11:18 CST",
    "ts": 1794590301,
