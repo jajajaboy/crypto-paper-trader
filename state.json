@@ -4,8 +4,8 @@
   "starting_cash_usd": 100,
   "positions": {
     "DOGE-USD": {
-      "cash": 0.0,
-      "qty": 517.5888314494823
+      "cash": 30.056513020635396,
+      "qty": 0.0
     },
     "XRP-USD": {
       "cash": 0.0,
@@ -352,11 +352,25 @@
       "qty": 187.27158147081556,
       "usd": 27.938000481380907,
       "fee_usd": 0.16863984193992498
+    },
+    {
+      "time": "2026-11-18 20:12 CST",
+      "ts": 1795054330,
+      "asset": "DOGE-USD",
+      "market_price": 0.05845,
+      "sma_fast": 0.058940000000000006,
+      "sma_slow": 0.05901139999999998,
+      "reason": "Sold DOGE: the 20-hour average ($0.05894) dropped below the 50-hour average ($0.05901), signaling a downtrend, so the bot moved back to cash.",
+      "side": "SELL",
+      "price": 0.05842077500000001,
+      "qty": 517.5888314494823,
+      "usd": 30.056513020635396,
+      "fee_usd": 0.1814276439877388
     }
   ],
-  "ticks": 47,
-  "last_tick": "2026-11-18 16:35 CST",
-  "last_total_value_usd": 86.64787396705692,
+  "ticks": 48,
+  "last_tick": "2026-11-18 20:12 CST",
+  "last_total_value_usd": 86.41802355842468,
   "data_source": "Coinbase Exchange public API",
   "decisions": [
     {
@@ -1768,12 +1782,42 @@
       "sma_slow": 0.15305280000000007,
       "reason": "Sold ADA: the 20-hour average ($0.15267) dropped below the 50-hour average ($0.15305), signaling a downtrend, so the bot moved back to cash.",
       "action": "SELL"
+    },
+    {
+      "time": "2026-11-18 20:12 CST",
+      "ts": 1795054330,
+      "asset": "DOGE-USD",
+      "market_price": 0.05845,
+      "sma_fast": 0.058940000000000006,
+      "sma_slow": 0.05901139999999998,
+      "reason": "Sold DOGE: the 20-hour average ($0.05894) dropped below the 50-hour average ($0.05901), signaling a downtrend, so the bot moved back to cash.",
+      "action": "SELL"
+    },
+    {
+      "time": "2026-11-18 20:12 CST",
+      "ts": 1795054330,
+      "asset": "XRP-USD",
+      "market_price": 0.9608,
+      "sma_fast": 0.97881,
+      "sma_slow": 0.9713439999999999,
+      "reason": "Held XRP: the 20-hour average ($0.97881) is still above the 50-hour average ($0.97134); uptrend continues, so the bot keeps holding XRP.",
+      "action": "HOLD"
+    },
+    {
+      "time": "2026-11-18 20:12 CST",
+      "ts": 1795054330,
+      "asset": "ADA-USD",
+      "market_price": 0.15061,
+      "sma_fast": 0.15216050000000003,
+      "sma_slow": 0.15286280000000002,
+      "reason": "Stayed in cash for ADA: the 20-hour average ($0.15216) is below the 50-hour average ($0.15286), so there is no uptrend to buy into.",
+      "action": "HOLD"
     }
   ],
   "last_prices": {
-    "DOGE-USD": 0.05832,
-    "XRP-USD": 0.9642,
-    "ADA-USD": 0.15016
+    "DOGE-USD": 0.05845,
+    "XRP-USD": 0.9608,
+    "ADA-USD": 0.15061
   },
-  "last_tick_ts": 1795041341
+  "last_tick_ts": 1795054330
 }
