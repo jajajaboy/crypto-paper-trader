@@ -2,8 +2,8 @@
  "mode": "PAPER (fake money)",
  "starting_cash_usd": 100,
  "created": "2026-10-28 14:10 CDT",
- "last_updated": "2026-11-19 12:59 CST",
- "ticks": 50,
+ "last_updated": "2026-11-19 18:24 CST",
+ "ticks": 51,
  "data_source": "Coinbase Exchange public API",
  "params": {
   "fast_sma": 20,
@@ -11,35 +11,49 @@
   "fee_rate": 0.006,
   "slippage_rate": 0.0005
  },
- "total_value": 87.135658745796,
- "cash": 87.135658745796,
- "pnl": -12.864341254204007,
- "pnl_pct": -0.12864341254204004,
- "fees_paid": 4.863404369038649,
+ "total_value": 86.95415249579202,
+ "cash": 59.19765826441509,
+ "pnl": -13.045847504207984,
+ "pnl_pct": -0.13045847504207986,
+ "fees_paid": 5.031032371926934,
  "holdings": [
   {
    "asset": "DOGE-USD",
    "cash": 30.056513020635396,
    "qty": 0.0,
-   "price": 0.0588,
+   "price": 0.05829,
    "value": 30.056513020635396
   },
   {
    "asset": "XRP-USD",
    "cash": 29.141145243779693,
    "qty": 0.0,
-   "price": 0.9736,
+   "price": 0.9629,
    "value": 29.141145243779693
   },
   {
    "asset": "ADA-USD",
-   "cash": 27.938000481380907,
-   "qty": 0.0,
-   "price": 0.15342,
-   "value": 27.938000481380907
+   "cash": 0.0,
+   "qty": 182.30866490231156,
+   "price": 0.15225,
+   "value": 27.756494231376934
   }
  ],
  "trades": [
+  {
+   "time": "2026-11-19 18:24 CST",
+   "ts": 1795134281,
+   "asset": "ADA-USD",
+   "market_price": 0.15225,
+   "sma_fast": 0.15302500000000002,
+   "sma_slow": 0.1527208,
+   "reason": "Bought ADA: the 20-hour average ($0.15303) is above the 50-hour average ($0.15272), signaling an uptrend, so the bot moved this coin's cash into ADA.",
+   "side": "BUY",
+   "price": 0.15232612499999998,
+   "qty": 182.30866490231156,
+   "usd": 27.938000481380907,
+   "fee_usd": 0.16762800288828544
+  },
   {
    "time": "2026-11-19 08:28 CST",
    "ts": 1795098497,
@@ -406,6 +420,36 @@
   }
  ],
  "decisions": [
+  {
+   "time": "2026-11-19 18:24 CST",
+   "ts": 1795134281,
+   "asset": "DOGE-USD",
+   "market_price": 0.05829,
+   "sma_fast": 0.05891299999999999,
+   "sma_slow": 0.058999800000000005,
+   "reason": "Stayed in cash for DOGE: the 20-hour average ($0.05891) is below the 50-hour average ($0.05900), so there is no uptrend to buy into.",
+   "action": "HOLD"
+  },
+  {
+   "time": "2026-11-19 18:24 CST",
+   "ts": 1795134281,
+   "asset": "XRP-USD",
+   "market_price": 0.9629,
+   "sma_fast": 0.9748949999999994,
+   "sma_slow": 0.9764160000000001,
+   "reason": "Stayed in cash for XRP: the 20-hour average ($0.97489) is below the 50-hour average ($0.97642), so there is no uptrend to buy into.",
+   "action": "HOLD"
+  },
+  {
+   "time": "2026-11-19 18:24 CST",
+   "ts": 1795134281,
+   "asset": "ADA-USD",
+   "market_price": 0.15225,
+   "sma_fast": 0.15302500000000002,
+   "sma_slow": 0.1527208,
+   "reason": "Bought ADA: the 20-hour average ($0.15303) is above the 50-hour average ($0.15272), signaling an uptrend, so the bot moved this coin's cash into ADA.",
+   "action": "BUY"
+  },
   {
    "time": "2026-11-19 12:59 CST",
    "ts": 1795114756,
